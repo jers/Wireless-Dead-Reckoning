@@ -1,0 +1,1 @@
+int Covert(int * guess, float value);
