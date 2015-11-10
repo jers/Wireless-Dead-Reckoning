@@ -1,0 +1,2 @@
+int testGuess(int nGuess);
+
