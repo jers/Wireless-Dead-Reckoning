@@ -9,8 +9,8 @@
 .\obj\main.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmFunc.h
 .\obj\main.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmSimd.h
 .\obj\main.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include\system_stm32f4xx.h
-.\obj\main.o: C:\Users\Jeremy\Documents\lab4\RTX Base Project\RTE\Device\STM32F407VG\stm32f4xx_conf.h
-.\obj\main.o: C:\Users\Jeremy\Documents\lab4\RTX Base Project\RTE\RTE_Components.h
+.\obj\main.o: C:\Users\Jeremy\Documents\Wireless-Dead-Reckoning\RealTime_Accelerometer_TemperatureSensor\RTE\Device\STM32F407VG\stm32f4xx_conf.h
+.\obj\main.o: C:\Users\Jeremy\Documents\Wireless-Dead-Reckoning\RealTime_Accelerometer_TemperatureSensor\RTE\RTE_Components.h
 .\obj\main.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\StdPeriph_Driver\inc\stm32f4xx_adc.h
 .\obj\main.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include\stm32f4xx.h
 .\obj\main.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\StdPeriph_Driver\inc\stm32f4xx_crc.h
@@ -38,7 +38,6 @@
 .\obj\main.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\StdPeriph_Driver\inc\stm32f4xx_dac.h
 .\obj\main.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 .\obj\main.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\StdPeriph_Driver\inc\stm32f4xx_fsmc.h
-.\obj\main.o: .\Accelerometer_Drivers\inc\lis3dsh.h
 .\obj\main.o: src\Initialize_Interrupts.h
 .\obj\main.o: src\osObjects.h
 .\obj\main.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\RTOS\RTX\INC\cmsis_os.h

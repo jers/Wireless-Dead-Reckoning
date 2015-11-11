@@ -496,6 +496,11 @@
               <FileType>1</FileType>
               <FilePath>.\Accelerometer_Drivers\src\lis302dl.c</FilePath>
             </File>
+            <File>
+              <FileName>lsm9ds1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Accelerometer_Drivers\src\lsm9ds1.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

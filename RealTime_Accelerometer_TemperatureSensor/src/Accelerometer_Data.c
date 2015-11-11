@@ -5,6 +5,8 @@
 #include "Globals.h"
 #endif
 #include "Math.h"
+#include "lsm9ds1.h"
+
 #define PI  3.14159265
 
 float	Cal1 [3][3] = { {  0.001003123061,	 0.000014174236,	0.000006273702 },
@@ -56,8 +58,8 @@ void updateAccelerometer(float * pitch, float * roll) {
 void readAccelerometer(float * Accelerometer_Data) {
 	
 	float raw_Accelerometer [3];
-	LIS3DSH_ReadACC(raw_Accelerometer); 
-	
+	//LIS3DSH_ReadACC(raw_Accelerometer); 
+	LSM9DS1_ReadACC(raw_Accelerometer); 	
 	
 	float Matrix_calibration_Value;
 	

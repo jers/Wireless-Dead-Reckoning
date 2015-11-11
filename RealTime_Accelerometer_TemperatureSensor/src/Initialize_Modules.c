@@ -5,6 +5,8 @@
 #define GLOBALS
 #include "Globals.h"
 #endif
+#include "lsm9ds1.h"
+
 int debug_a;
 float debug_b, debug_c;
 float debug_d [3];
@@ -31,7 +33,7 @@ void Initialize_Globals() {
 
 void Initialize_Accelerometer() {
 	
-	LIS3DSH_InitTypeDef LIS3DSH_Initialize;
+/*	LIS3DSH_InitTypeDef LIS3DSH_Initialize;
 	LIS3DSH_DRYInterruptConfigTypeDef LIS3DSH_DRYInterruptConfig;
 	
 	
@@ -48,7 +50,24 @@ void Initialize_Accelerometer() {
 		
 	LIS3DSH_Init(&LIS3DSH_Initialize); 
 	LIS3DSH_DataReadyInterruptConfig(&LIS3DSH_DRYInterruptConfig);
-
+*/
+	
+	
+	LSM9DS1_InitTypeDef LSM9DS1_Initialize;
+	LSM9DS1_DRYInterruptConfigTypeDef LSM9DS1_DRYInterruptConfig;
+	
+	LSM9DS1_Initialize.Power_Mode_Output_DataRate = LSM9DS1_DATARATE_119;
+	LSM9DS1_Initialize.Full_Scale = LSM9DS1_FULLSCALE_2;
+	LSM9DS1_Initialize.Filter_Mode = LSM9DS1_BW_MODE_DEFAULT;
+	LSM9DS1_Initialize.AA_Filter_BW = LSM9DS1_AA_BW_211;
+	LSM9DS1_Initialize.Axes_Enable = LSM9DS1_X_ENABLE|LSM9DS1_Y_ENABLE|LSM9DS1_Z_ENABLE;
+	LSM9DS1_Initialize.Decimation = LSM9DS1_ACC_DEC_8;	
+	
+	LSM9DS1_DRYInterruptConfig.Dataready_Interrupt = LSM9DS1_DATA_READY_INTERRUPT_ENABLED; 
+		
+	LSM9DS1_Init(&LSM9DS1_Initialize); 
+	LSM9DS1_DataReadyInterruptConfig(&LSM9DS1_DRYInterruptConfig);
+	
 	
 }
 
