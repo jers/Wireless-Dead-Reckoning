@@ -70,7 +70,7 @@ void readAccelerometer(float * Accelerometer_Data) {
 			Matrix_calibration_Value += raw_Accelerometer[j] * Cal1[i][j];
 		}
 		Accelerometer_Data[i] = Matrix_calibration_Value + Cal2[i];
-		//debug_d[i] = Accelerometer_Data[i];
+		debug_d[i] = Accelerometer_Data[i];
 	}
 	
 	
